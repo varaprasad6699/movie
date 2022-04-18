@@ -1,0 +1,48 @@
+.singlecomponent{
+    display: flex;
+    flex-direction: column;
+    background-color:'#141414';
+    width:200px;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px;
+    padding: 5px;
+    transition: transform .2s;
+}
+.singlecomponent:hover{
+    background-color:white;
+    color: black;
+    transform: scale(1.1);
+}
+@media( max-width:700px ){
+    .singlecomponent{
+       width: 30vw;
+    }
+}
+.image{
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+    padding: 7px 0px;
+}
+.subTitle{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0px 3px;
+}
+@media( max-width:700px ){
+    .title{
+        font-size: 15px;
+    }
+    .subTitle{
+        font-size: 3vw;
+        font-weight: 600;
+        color: darkgrey;
+    }
+}
